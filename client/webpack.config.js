@@ -29,19 +29,19 @@ module.exports = () => {
       }),
 
       new WebpackPwaManifest({
-        fingerprints: false,
-        inject: true,
         name: "Just Another Text Editor",
         short_name: "JATE",
-        description: "Text Editor with offline capabilities using IndexedDB",
-        background_color: "#225ca3",
-        theme_color: "#225ca3",
+        description: "Text Editor that functions both on and offline!",
+        background_color: "#808080",
+        theme_color: "#808080",
+        fingerprints: false,
+        inject: true,
         start_url: "/",
         publicPath: "/",
         icons: [
           {
             src: path.resolve("src/images/logo.png"),
-            sizes: [96, 128, 192, 256, 384, 512], // multiple sizes
+            sizes: [96, 128, 192, 256, 384, 512],
             destination: path.join("assets", "icons"),
           },
         ],
@@ -57,7 +57,7 @@ module.exports = () => {
 
         {
           test: /\.m?js$/,
-          exclude: /(node_modules|bower_components)/,
+          exclude: /(node_modules)/,
           use: {
             loader: "babel-loader",
             options: {
