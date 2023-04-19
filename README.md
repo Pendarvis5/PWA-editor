@@ -2,7 +2,7 @@
 
 ## TASK
 
-coming soon...
+    The challenge is to create a PWA. This knowledge will be demonstrated by developing a text editor that runs in the browser on and offline.
 
 ## Table of Contents
 
@@ -13,7 +13,9 @@ coming soon...
 
 ## Installation
 
-coming soon...
+NPM installation required on the following:
+
+idb
 
 ## Visuals (Code Snippet)
 
